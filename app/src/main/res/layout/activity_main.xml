@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/rgNonveg"
+        android:layout_width="182dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/tvNonveg">
+
+        <RadioButton
+            android:id="@+id/rbChicken"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chicken"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rbMutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mutton"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rbEgg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Egg"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rbPork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pork"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Burger Shop"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="205dp" />
+
+    <TextView
+        android:id="@+id/tvVeg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Veg "
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/tvNonveg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Non-veg"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvVeg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2" />
+
+    <RadioGroup
+        android:id="@+id/rgVeg"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvVeg">
+
+        <RadioButton
+            android:id="@+id/rbTikki"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tikki"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rbPaneer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Paneer"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rbSoyachaap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SoyaChaap"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvAddons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Add-On's"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgVeg" />
+
+    <CheckBox
+        android:id="@+id/cbCheese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Cheese"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddons" />
+
+    <CheckBox
+        android:id="@+id/cbMayo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mayo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbEgg" />
+
+    <CheckBox
+        android:id="@+id/cbKetchup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ketchup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbMayo" />
+
+    <CheckBox
+        android:id="@+id/cbEgg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Egg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbCheese" />
+
+    <Button
+        android:id="@+id/btnOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbKetchup" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="179dp"
+        android:layout_height="204dp"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/rgNonveg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
