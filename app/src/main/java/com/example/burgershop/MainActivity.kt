@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
             val mayo = cbMayo.isChecked
             val ketchup = cbKetchup.isChecked
 
-            var result = "You have ordered a Burger With "+
+            var result = "You have ordered a Big bada wala Burger With "+
                     "${veg.text} & ${Nonveg.text}"+
                     (if(cheese) "\ncheese" else "")+
                     (if(egg) "\nEgg" else "")+
